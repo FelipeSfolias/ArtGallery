@@ -1,0 +1,36 @@
+<a routerLink="/obras">← Voltar para a galeria</a>
+
+@if (loading()) {
+<p class="mensagem">Carregando obra...</p>
+} @else {
+@if (obra(); as obra) {
+<article class="detalhe">
+  <app-capa-obra class="imagem" [obra]="obra" />
+
+  <div>
+    <span class="selo" [class.exposicao]="obra.emExposicao">
+      {{ obra.emExposicao ? 'Em exposição' : 'No acervo (não exposta)' }}
+    </span>
+    <h1>{{ obra.titulo }}</h1>
+    <p>por <strong>{{ obra.artista }}</strong></p>
+
+    <dl>
+      <dt>Técnica</dt>
+      <dd>{{ obra.tecnica }}</dd>
+      <dt>Ano de criação</dt>
+      <dd>{{ obra.anoCriacao }}</dd>
+      <dt>Valor estimado</dt>
+      <dd>{{ obra.valorEstimado | currency: 'BRL' : 'symbol' : '1.2-2' : 'pt-BR' }}</dd>
+    </dl>
+
+    <h3>Sobre a obra</h3>
+    <p>{{ obra.descricao }}</p>
+  </div>
+</article>
+} @else {
+<section class="mensagem erro">
+  <h1>Obra não encontrada</h1>
+  <p>A obra pode não existir ou ter sido removida do acervo.</p>
+</section>
+}
+}

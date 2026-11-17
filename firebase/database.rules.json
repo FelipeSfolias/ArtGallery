@@ -1,0 +1,19 @@
+{
+  "rules": {
+    "obras": {
+      ".read": true,
+      ".write": true,
+      "$obraId": {
+        ".validate": "newData.hasChildren(['titulo', 'artista', 'tecnica', 'anoCriacao', 'descricao', 'valorEstimado', 'emExposicao'])",
+        "titulo": { ".validate": "newData.isString() && newData.val().length >= 2" },
+        "artista": { ".validate": "newData.isString() && newData.val().length >= 3" },
+        "tecnica": { ".validate": "newData.isString()" },
+        "anoCriacao": { ".validate": "newData.isNumber()" },
+        "descricao": { ".validate": "newData.isString()" },
+        "valorEstimado": { ".validate": "newData.isNumber() && newData.val() >= 0" },
+        "emExposicao": { ".validate": "newData.isBoolean()" },
+        "$outro": { ".validate": false }
+      }
+    }
+  }
+}

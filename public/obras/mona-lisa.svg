@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <title>Mona Lisa (releitura) — Leonardo da Vinci</title>
+  <rect width="400" height="300" fill="#8da07a"/>
+  <!-- paisagem ao fundo -->
+  <path d="M0 120 C60 90 110 130 160 110 V300 H0Z" fill="#6e7f5a"/>
+  <path d="M240 115 C290 95 340 125 400 100 V300 H240Z" fill="#6e7f5a"/>
+  <path d="M0 150 C40 140 80 160 130 150" stroke="#b9c3a6" stroke-width="5" fill="none"/>
+  <path d="M270 150 C310 140 350 158 400 145" stroke="#b9c3a6" stroke-width="5" fill="none"/>
+  <rect y="200" width="400" height="100" fill="#4f5a3a"/>
+  <!-- corpo -->
+  <path d="M110 300 C115 220 150 180 200 180 C250 180 285 220 290 300Z" fill="#2d2a1f"/>
+  <path d="M170 190 C180 215 220 215 230 190 L222 182 H178Z" fill="#c99a6a"/>
+  <!-- mãos -->
+  <ellipse cx="175" cy="275" rx="28" ry="12" fill="#d3a676"/>
+  <ellipse cx="215" cy="270" rx="28" ry="12" fill="#d3a676"/>
+  <!-- cabelo -->
+  <path d="M155 200 C140 160 150 85 200 80 C250 85 260 160 245 200 L232 195 C240 160 235 110 200 108 C165 110 160 160 168 195Z" fill="#2b2016"/>
+  <!-- rosto -->
+  <ellipse cx="200" cy="140" rx="32" ry="42" fill="#d6aa78"/>
+  <path d="M168 128 C175 100 225 100 232 128 C225 112 175 112 168 128Z" fill="#2b2016"/>
+  <g fill="#3a2a1a"><ellipse cx="187" cy="138" rx="5" ry="3"/><ellipse cx="213" cy="138" rx="5" ry="3"/></g>
+  <path d="M200 142 V156" stroke="#b38457" stroke-width="2"/>
+  <path d="M189 165 C196 169 205 169 212 164" stroke="#8a5a3a" stroke-width="2" fill="none"/>
+</svg>

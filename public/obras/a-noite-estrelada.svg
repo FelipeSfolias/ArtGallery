@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <title>A Noite Estrelada (releitura) — Vincent van Gogh</title>
+  <rect width="400" height="300" fill="#1d3a6e"/>
+  <!-- redemoinhos do céu -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M0 95 C60 60 110 120 170 90 S270 50 330 85 S390 110 400 95" stroke="#6f93c9" stroke-width="10"/>
+    <path d="M0 120 C70 95 120 140 190 115 S300 85 400 125" stroke="#3f63a3" stroke-width="8"/>
+    <path d="M140 110 C150 80 200 70 215 95 C228 118 190 135 175 118 C165 106 180 92 195 100" stroke="#c9d8ee" stroke-width="6"/>
+    <path d="M20 60 C60 40 100 50 120 40" stroke="#5a7fbf" stroke-width="6"/>
+    <path d="M230 40 C260 25 300 35 320 20" stroke="#5a7fbf" stroke-width="6"/>
+  </g>
+  <!-- estrelas com halo -->
+  <g>
+    <circle cx="60" cy="40" r="16" fill="#f3e08a" opacity=".45"/><circle cx="60" cy="40" r="7" fill="#fff6c2"/>
+    <circle cx="160" cy="30" r="14" fill="#f3e08a" opacity=".45"/><circle cx="160" cy="30" r="6" fill="#fff6c2"/>
+    <circle cx="250" cy="70" r="13" fill="#f3e08a" opacity=".45"/><circle cx="250" cy="70" r="5" fill="#fff6c2"/>
+    <circle cx="110" cy="145" r="12" fill="#f3e08a" opacity=".45"/><circle cx="110" cy="145" r="5" fill="#fff6c2"/>
+    <circle cx="300" cy="140" r="12" fill="#f3e08a" opacity=".45"/><circle cx="300" cy="140" r="5" fill="#fff6c2"/>
+  </g>
+  <!-- lua -->
+  <circle cx="350" cy="50" r="28" fill="#f5c542" opacity=".5"/>
+  <circle cx="350" cy="50" r="20" fill="#f9d65c"/>
+  <circle cx="358" cy="44" r="16" fill="#1d3a6e"/>
+  <!-- colinas e vila -->
+  <path d="M0 200 C80 170 160 190 240 175 S360 170 400 185 V300 H0Z" fill="#2c4a7a"/>
+  <path d="M0 235 C100 215 200 230 400 220 V300 H0Z" fill="#1c2f52"/>
+  <g fill="#23365c" stroke="#0f1b33" stroke-width="2">
+    <rect x="150" y="235" width="26" height="20"/><rect x="185" y="240" width="22" height="16"/>
+    <rect x="245" y="236" width="30" height="20"/><rect x="290" y="242" width="24" height="15"/>
+    <rect x="330" y="238" width="26" height="18"/>
+  </g>
+  <path d="M215 255 V215 L222 180 L229 215 V255Z" fill="#23365c" stroke="#0f1b33" stroke-width="2"/>
+  <g fill="#f3d36b"><rect x="158" y="242" width="5" height="5"/><rect x="252" y="243" width="5" height="5"/><rect x="336" y="244" width="5" height="5"/></g>
+  <!-- cipreste -->
+  <path d="M55 300 C40 250 45 200 60 150 C65 120 72 90 80 70 C88 100 95 130 100 165 C108 215 105 260 98 300Z" fill="#14201a"/>
+  <path d="M70 290 C62 240 68 190 78 120" fill="none" stroke="#2b4030" stroke-width="4"/>
+</svg>

@@ -1,0 +1,33 @@
+.cabecalho {
+  padding: 12px 16px;
+  background: var(--texto);
+}
+
+.conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.marca {
+  color: #fff;
+  font-family: Georgia, serif;
+  font-size: 1.4rem;
+}
+
+nav {
+  display: flex;
+  gap: 16px;
+}
+
+nav a.ativo {
+  color: #fff;
+  text-decoration: underline;
+}

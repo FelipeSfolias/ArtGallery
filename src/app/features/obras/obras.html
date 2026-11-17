@@ -1,0 +1,44 @@
+<span class="etiqueta">Acervo virtual</span>
+<h1>Galeria de obras</h1>
+
+<div class="ferramentas">
+  <input #campoBusca type="search" placeholder="Buscar por título, artista ou técnica" aria-label="Buscar obras"
+    (input)="busca.set(campoBusca.value)" />
+
+  <div class="filtros" role="group" aria-label="Filtrar por disponibilidade">
+    <button type="button" [class.btn-secundario]="filtro() !== 'todas'" (click)="filtro.set('todas')">Todas</button>
+    <button type="button" [class.btn-secundario]="filtro() !== 'exposicao'" (click)="filtro.set('exposicao')">Em
+      exposição</button>
+    <button type="button" [class.btn-secundario]="filtro() !== 'acervo'" (click)="filtro.set('acervo')">No
+      acervo</button>
+  </div>
+</div>
+
+@if (loading()) {
+<p class="mensagem">Carregando a galeria...</p>
+} @else if (errorMessage()) {
+<p class="mensagem erro">{{ errorMessage() }}</p>
+} @else if (obrasFiltradas().length === 0) {
+<p class="mensagem">Nenhuma obra encontrada.</p>
+} @else {
+<p class="resultado">{{ obrasFiltradas().length }} de {{ obras().length }} obra(s)</p>
+
+<div class="grade">
+  @for (obra of obrasFiltradas(); track obra.id) {
+  <article class="card">
+    <a [routerLink]="['/obras', obra.id]" [attr.aria-label]="'Ver detalhes de ' + obra.titulo">
+      <app-capa-obra [obra]="obra" />
+    </a>
+    <div class="card-corpo">
+      <span class="selo" [class.exposicao]="obra.emExposicao">
+        {{ obra.emExposicao ? 'Em exposição' : 'No acervo' }}
+      </span>
+      <h3>{{ obra.titulo }}</h3>
+      <p>{{ obra.artista }}</p>
+      <p>{{ obra.tecnica }}</p>
+      <a [routerLink]="['/obras', obra.id]">Ver obra →</a>
+    </div>
+  </article>
+  }
+</div>
+}

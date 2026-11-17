@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <title>Abaporu (releitura) — Tarsila do Amaral</title>
+  <rect width="400" height="300" fill="#3f86c4"/>
+  <rect y="230" width="400" height="70" fill="#4f9a3c"/>
+  <!-- sol -->
+  <circle cx="300" cy="120" r="34" fill="#f2c230"/>
+  <circle cx="300" cy="120" r="20" fill="#f08a24"/>
+  <!-- cacto -->
+  <g fill="#2f7a32">
+    <rect x="285" y="150" width="30" height="110" rx="14"/>
+    <path d="M285 200 H260 a12 12 0 0 1 -12 -12 V160 a10 10 0 0 1 20 0 V182 H285Z"/>
+    <path d="M315 190 H338 V150 a10 10 0 0 1 20 0 V194 a14 14 0 0 1 -14 14 H315Z"/>
+  </g>
+  <!-- figura -->
+  <g fill="#e8956a" stroke="#b9653f" stroke-width="2">
+    <ellipse cx="95" cy="262" rx="78" ry="26"/>
+    <path d="M120 245 C135 180 170 150 175 110 C178 85 165 70 150 70 C130 72 125 100 118 130 C110 170 90 210 85 245Z"/>
+    <path d="M160 120 C190 140 205 175 200 205 C196 225 175 230 160 220 C150 212 155 195 165 185 C170 170 160 150 150 135Z"/>
+    <ellipse cx="183" cy="222" rx="34" ry="16"/>
+    <circle cx="150" cy="60" r="10"/>
+  </g>
+  <path d="M95 238 h16 m10 0 h16 m10 0 h16" stroke="#b9653f" stroke-width="2"/>
+</svg>

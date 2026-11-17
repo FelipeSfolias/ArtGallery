@@ -1,0 +1,28 @@
+.ferramentas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.ferramentas input {
+  flex: 1;
+  min-width: 220px;
+  padding: 8px;
+  border: 1px solid var(--borda);
+  border-radius: 4px;
+  font: inherit;
+}
+
+.filtros {
+  display: flex;
+  gap: 4px;
+}
+
+.resultado {
+  color: var(--texto-suave);
+}
+
+.card-corpo h3 {
+  margin-top: 8px;
+}

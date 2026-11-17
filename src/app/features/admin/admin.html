@@ -1,0 +1,59 @@
+<div class="topo">
+  <div>
+    <span class="etiqueta">Painel administrativo</span>
+    <h1>Acervo de obras</h1>
+  </div>
+  <a routerLink="/admin/form" class="btn">+ Nova obra</a>
+</div>
+
+@if (successMessage()) {
+<p class="mensagem sucesso">{{ successMessage() }}</p>
+}
+@if (errorMessage()) {
+<p class="mensagem erro">{{ errorMessage() }}</p>
+}
+
+@if (loading()) {
+<p class="mensagem">Carregando obras...</p>
+} @else if (obras().length === 0 && !errorMessage()) {
+<p class="mensagem">Nenhuma obra cadastrada ainda. <a routerLink="/admin/form">Cadastrar a primeira obra</a>.</p>
+} @else if (obras().length > 0) {
+<p>{{ obras().length }} obra(s) cadastrada(s)</p>
+
+<div class="tabela">
+  <table>
+    <thead>
+      <tr>
+        <th>Título</th>
+        <th>Artista</th>
+        <th>Técnica</th>
+        <th>Ano</th>
+        <th>Valor estimado</th>
+        <th>Situação</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (obra of obras(); track obra.id) {
+      <tr>
+        <td>{{ obra.titulo }}</td>
+        <td>{{ obra.artista }}</td>
+        <td>{{ obra.tecnica }}</td>
+        <td>{{ obra.anoCriacao }}</td>
+        <td>{{ obra.valorEstimado | currency: 'BRL' : 'symbol' : '1.2-2' : 'pt-BR' }}</td>
+        <td>
+          <span class="selo" [class.exposicao]="obra.emExposicao">
+            {{ obra.emExposicao ? 'Em exposição' : 'No acervo' }}
+          </span>
+        </td>
+        <td class="acoes">
+          <a class="btn btn-secundario" [routerLink]="['/obras', obra.id]">Ver</a>
+          <button type="button" class="btn-secundario" (click)="edit(obra.id)">Editar</button>
+          <button type="button" class="btn-perigo" (click)="remove(obra)">Excluir</button>
+        </td>
+      </tr>
+      }
+    </tbody>
+  </table>
+</div>
+}

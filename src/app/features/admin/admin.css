@@ -1,0 +1,38 @@
+.topo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+/* Rolagem lateral só na tabela em telas pequenas */
+.tabela {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+th,
+td {
+  padding: 8px;
+  border-bottom: 1px solid var(--borda);
+  text-align: left;
+}
+
+th {
+  background: var(--fundo-suave);
+}
+
+.acoes {
+  white-space: nowrap;
+}
+
+.acoes > * {
+  margin-right: 4px;
+  padding: 4px 10px;
+}

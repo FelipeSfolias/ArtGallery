@@ -1,0 +1,56 @@
+<article class="sobre">
+  <header class="apresentacao">
+    <span class="etiqueta">Sobre a galeria</span>
+    <h1>Um museu que cabe no navegador</h1>
+    <p class="resumo">A ArtGallery é uma galeria virtual criada para catalogar obras de arte e decidir quais delas
+      merecem um lugar na parede — sem fila, sem ingresso e sem segurança pedindo para dar um passo para trás.</p>
+  </header>
+
+  <section class="capitulo">
+    <h2>Como tudo começou</h2>
+    <p>A ideia nasceu de uma pergunta simples: e se o acervo de uma galeria pudesse ser organizado com o mesmo cuidado
+      com que as obras são expostas?</p>
+    <p>Em vez de planilhas esquecidas e etiquetas escritas à mão, cada obra ganhou uma ficha catalográfica digital.</p>
+    <p>O resultado é um acervo que cresce sem perder a organização — e uma vitrine sempre pronta para receber visitas.
+    </p>
+  </section>
+
+  <section class="capitulo">
+    <h2>O que catalogamos</h2>
+    <ul class="ficha">
+      <li><strong>Título</strong> — o nome pelo qual a obra é conhecida.</li>
+      <li><strong>Artista</strong> — quem assinou (ou deveria ter assinado) a peça.</li>
+      <li><strong>Técnica</strong> — óleo sobre tela, aquarela, escultura em bronze, fotografia e muito mais.</li>
+      <li><strong>Ano de criação</strong> — para situar a obra no tempo.</li>
+      <li><strong>Descrição</strong> — contexto, história e detalhes que fazem a diferença.</li>
+      <li><strong>Valor estimado</strong> — porque toda curadoria também precisa de seguro.</li>
+      <li><strong>Disponibilidade</strong> — se a obra está em exposição ou guardada no acervo.</li>
+    </ul>
+  </section>
+
+  <section class="capitulo">
+    <h2>Por trás das molduras</h2>
+    <p>O front-end foi construído com <strong>Angular 21</strong>, usando componentes standalone, rotas com carregamento
+      sob demanda, <em>signals</em> para o estado da tela e <em>Reactive Forms</em> para o cadastro.</p>
+    <p>Os dados vivem no <strong>Firebase Realtime Database</strong> e são acessados pela API REST com o
+      <em>HttpClient</em>: listar, buscar por id, cadastrar, atualizar e excluir.</p>
+    <p>Ou seja: quando uma obra sai da parede no painel administrativo, ela some da galeria na hora.</p>
+  </section>
+
+  <section class="localizacao" aria-labelledby="titulo-localizacao">
+    <div class="endereco">
+      <span class="etiqueta">Venha visitar</span>
+      <h2 id="titulo-localizacao">Onde nos encontrar</h2>
+      <p><strong>ArtGallery — Galeria Virtual</strong></p>
+      <address>Rodovia PR-438, Rodovia<br>Realeza - PR, 85770-000</address>
+      <p class="aviso">Localização informada para fins demonstrativos deste projeto.</p>
+      <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=-25.801877%2C-53.523598"
+        target="_blank" rel="noopener noreferrer">Abrir rota no Google Maps</a>
+    </div>
+    <div class="mapa">
+      <iframe title="Mapa de satélite com a localização da ArtGallery em Realeza, Paraná"
+        src="https://www.google.com/maps?q=-25.801877,-53.523598&amp;z=16&amp;t=k&amp;output=embed" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </div>
+  </section>
+</article>

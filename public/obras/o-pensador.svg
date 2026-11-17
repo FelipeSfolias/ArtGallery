@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <title>O Pensador (releitura) — Auguste Rodin</title>
+  <rect width="400" height="300" fill="#e7e2d8"/>
+  <rect y="270" width="400" height="30" fill="#cfc7b8"/>
+  <!-- pedestal -->
+  <rect x="120" y="220" width="160" height="55" fill="#8f8a80"/>
+  <rect x="110" y="212" width="180" height="12" fill="#a39d92"/>
+  <!-- figura em bronze -->
+  <g fill="#4a3a26" stroke="#2c2216" stroke-width="2">
+    <path d="M150 212 C145 180 150 150 165 130 C180 112 205 112 215 130 C222 145 222 170 215 190 L200 212Z"/>
+    <path d="M195 190 C215 180 240 185 255 190 L258 212 H232 L230 200 C220 200 205 205 195 205Z"/>
+    <path d="M232 205 L236 250 H250 L252 212Z"/>
+    <path d="M160 200 L158 250 H172 L178 212Z"/>
+    <path d="M205 140 C225 150 235 165 230 180 L222 182 C222 168 212 158 200 152Z"/>
+    <path d="M222 180 C222 160 220 140 210 125 L200 130 C205 145 210 160 212 180Z"/>
+    <circle cx="200" cy="108" r="17"/>
+  </g>
+  <path d="M190 112 C195 120 203 122 210 120" stroke="#6d5638" stroke-width="2" fill="none"/>
+  <path d="M170 150 C175 165 175 180 170 195" stroke="#6d5638" stroke-width="2" fill="none"/>
+</svg>

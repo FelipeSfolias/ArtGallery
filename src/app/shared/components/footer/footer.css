@@ -1,0 +1,10 @@
+.rodape {
+  padding: 16px;
+  border-top: 1px solid var(--borda);
+  color: var(--texto-suave);
+  text-align: center;
+}
+
+p {
+  margin: 0;
+}

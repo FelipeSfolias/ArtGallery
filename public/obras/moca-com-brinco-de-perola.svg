@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <title>Moça com Brinco de Pérola (releitura) — Johannes Vermeer</title>
+  <rect width="400" height="300" fill="#16140f"/>
+  <!-- ombro / roupa -->
+  <path d="M120 300 C130 245 175 215 230 215 C275 215 300 250 305 300Z" fill="#8a6a3a"/>
+  <path d="M215 222 C240 225 255 245 258 265" stroke="#f1ead8" stroke-width="8" fill="none"/>
+  <!-- tecido amarelo que cai do turbante -->
+  <path d="M165 105 C150 140 140 190 150 235 L172 230 C165 190 170 145 182 118Z" fill="#e8c35a"/>
+  <!-- rosto -->
+  <ellipse cx="215" cy="160" rx="42" ry="52" fill="#e9c8a3"/>
+  <!-- turbante azul -->
+  <path d="M168 135 C165 90 200 70 238 78 C262 84 268 105 258 120 C240 108 205 110 180 130Z" fill="#2f5aa8"/>
+  <path d="M182 90 C200 82 225 82 245 90" stroke="#5f86cf" stroke-width="6" fill="none"/>
+  <rect x="168" y="118" width="20" height="18" fill="#e8c35a"/>
+  <!-- olhos, nariz e boca -->
+  <ellipse cx="200" cy="158" rx="7" ry="5" fill="#fff"/><circle cx="198" cy="158" r="4" fill="#3a2a1a"/>
+  <ellipse cx="235" cy="155" rx="6" ry="4" fill="#fff"/><circle cx="233" cy="155" r="3" fill="#3a2a1a"/>
+  <path d="M222 160 L226 182 L218 184" stroke="#c49a74" stroke-width="2" fill="none"/>
+  <path d="M208 196 C214 192 224 192 228 196 C224 202 212 202 208 196Z" fill="#c4645a"/>
+  <!-- brinco de pérola -->
+  <circle cx="178" cy="196" r="8" fill="#e6e6ea"/>
+  <circle cx="175" cy="193" r="3" fill="#fff"/>
+</svg>

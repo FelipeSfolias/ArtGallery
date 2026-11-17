@@ -1,0 +1,107 @@
+<div class="form-box">
+    <a routerLink="/admin">← Voltar para o acervo</a>
+
+    <span class="etiqueta">Ficha catalográfica</span>
+    <h2>
+        @if (editingId() !== null) {
+        Editar obra
+        } @else {
+        Cadastrar obra
+        }
+    </h2>
+
+    @if (loadingData()) {
+    <p class="mensagem">Carregando dados da obra...</p>
+    }
+    @if (successMessage()) {
+    <p class="mensagem sucesso">{{ successMessage() }}</p>
+    }
+    @if (errorMessage()) {
+    <p class="mensagem erro">{{ errorMessage() }}</p>
+    }
+
+    <form [formGroup]="form" (ngSubmit)="submit()" novalidate>
+        <div class="field">
+            <label for="titulo">Título da obra</label>
+            <input id="titulo" type="text" formControlName="titulo" placeholder="Ex.: Abaporu" />
+            <span class="character-count">{{ form.controls.titulo.value.length }}/120 caracteres</span>
+            @if (invalido('titulo')) {
+            <small>Informe um título entre 2 e 120 caracteres.</small>
+            }
+        </div>
+
+        <div class="linha-dupla">
+            <div class="field">
+                <label for="artista">Artista</label>
+                <input id="artista" type="text" formControlName="artista" placeholder="Ex.: Tarsila do Amaral" />
+                @if (invalido('artista')) {
+                <small>Informe o nome do artista (mínimo 3 caracteres).</small>
+                }
+            </div>
+
+            <div class="field">
+                <label for="tecnica">Técnica</label>
+                <input id="tecnica" type="text" formControlName="tecnica" list="lista-tecnicas"
+                    placeholder="Ex.: Óleo sobre tela" />
+                <datalist id="lista-tecnicas">
+                    @for (tecnica of tecnicasSugeridas; track tecnica) {
+                    <option [value]="tecnica"></option>
+                    }
+                </datalist>
+                @if (invalido('tecnica')) {
+                <small>Informe a técnica utilizada.</small>
+                }
+            </div>
+        </div>
+
+        <div class="linha-dupla">
+            <div class="field">
+                <label for="anoCriacao">Ano de criação</label>
+                <input id="anoCriacao" type="number" formControlName="anoCriacao" min="1" [max]="anoAtual"
+                    step="1" />
+                @if (invalido('anoCriacao')) {
+                <small>Informe um ano entre 1 e {{ anoAtual }}.</small>
+                }
+            </div>
+
+            <div class="field">
+                <label for="valorEstimado">Valor estimado (R$)</label>
+                <input id="valorEstimado" type="number" formControlName="valorEstimado" min="0" step="0.01" />
+                @if (invalido('valorEstimado')) {
+                <small>Informe um valor maior ou igual a zero.</small>
+                }
+            </div>
+        </div>
+
+        <div class="field">
+            <label for="descricao">Descrição</label>
+            <textarea id="descricao" formControlName="descricao" rows="6"
+                placeholder="Conte a história, o contexto e os detalhes da obra"></textarea>
+            <span class="character-count">{{ form.controls.descricao.value.length }}/1000 caracteres</span>
+            @if (invalido('descricao')) {
+            <small>Informe uma descrição entre 10 e 1000 caracteres.</small>
+            }
+        </div>
+
+        <label class="checkbox-field" for="emExposicao">
+            <input id="emExposicao" type="checkbox" formControlName="emExposicao" />
+            <span>
+                <strong>Disponível para exposição</strong>
+                <em>Obras marcadas aparecem como "Em exposição" na galeria.</em>
+            </span>
+        </label>
+
+        <div class="botoes">
+            <a class="btn btn-secundario" routerLink="/admin">Cancelar</a>
+            <button type="submit" [disabled]="loading() || loadingData()">
+                @if (loading()) {
+                Salvando...
+                } @else if (editingId() !== null) {
+                Atualizar obra
+                } @else {
+                Salvar obra
+                }
+            </button>
+        </div>
+    </form>
+</div>

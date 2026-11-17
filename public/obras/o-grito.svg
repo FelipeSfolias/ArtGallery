@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <title>O Grito (releitura) — Edvard Munch</title>
+  <rect width="400" height="300" fill="#e2672b"/>
+  <!-- céu ondulado -->
+  <g fill="none" stroke-width="12" stroke-linecap="round">
+    <path d="M0 30 C60 10 120 50 200 25 S330 10 400 35" stroke="#f2a03d"/>
+    <path d="M0 60 C70 40 140 80 220 55 S340 45 400 65" stroke="#d2412a"/>
+    <path d="M0 90 C80 70 150 110 230 85 S350 75 400 95" stroke="#f0b445"/>
+  </g>
+  <!-- fiorde -->
+  <path d="M160 110 C220 100 260 130 330 115 C380 105 400 120 400 120 V220 C330 200 280 230 220 200 C190 185 170 160 160 110Z" fill="#2c4a8a"/>
+  <path d="M190 140 C240 130 280 160 340 145" stroke="#4d6fb5" stroke-width="8" fill="none"/>
+  <path d="M0 110 C60 100 120 130 160 110 C170 160 150 220 100 300 H0Z" fill="#3e5b3a"/>
+  <!-- ponte diagonal -->
+  <path d="M120 300 L400 150 V200 L210 300Z" fill="#a8603a"/>
+  <g stroke="#5a2e18" stroke-width="4"><path d="M120 300 L400 150"/><path d="M150 300 L400 165"/></g>
+  <!-- figuras ao fundo -->
+  <g fill="#1c1c1c"><rect x="330" y="152" width="8" height="22"/><rect x="345" y="146" width="8" height="24"/></g>
+  <!-- figura central -->
+  <path d="M175 300 C170 250 180 215 200 200 C220 215 230 250 225 300Z" fill="#2d2a33"/>
+  <path d="M200 200 C188 200 178 220 172 240" stroke="#2d2a33" stroke-width="10" fill="none"/>
+  <path d="M200 200 C212 200 222 220 228 240" stroke="#2d2a33" stroke-width="10" fill="none"/>
+  <ellipse cx="200" cy="165" rx="22" ry="34" fill="#c9b78a"/>
+  <ellipse cx="178" cy="170" rx="6" ry="18" fill="#c9b78a"/>
+  <ellipse cx="222" cy="170" rx="6" ry="18" fill="#c9b78a"/>
+  <g fill="#2a2620"><ellipse cx="192" cy="155" rx="4" ry="6"/><ellipse cx="208" cy="155" rx="4" ry="6"/><ellipse cx="200" cy="182" rx="5" ry="9"/></g>
+</svg>

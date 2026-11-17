@@ -1,0 +1,94 @@
+{
+  "obras": {
+    "obra-001": {
+      "titulo": "Abaporu",
+      "artista": "Tarsila do Amaral",
+      "tecnica": "Óleo sobre tela",
+      "anoCriacao": 1928,
+      "descricao": "Figura de pés e mãos enormes e cabeça pequena, ao lado de um cacto e sob um sol forte. Presente de Tarsila para Oswald de Andrade, inspirou o Movimento Antropofágico.",
+      "valorEstimado": 250000000,
+      "emExposicao": true
+    },
+    "obra-002": {
+      "titulo": "Operários",
+      "artista": "Tarsila do Amaral",
+      "tecnica": "Óleo sobre tela",
+      "anoCriacao": 1933,
+      "descricao": "Dezenas de rostos de trabalhadores de várias origens enfileirados diante das chaminés de uma fábrica, retratando a industrialização de São Paulo.",
+      "valorEstimado": 120000000,
+      "emExposicao": true
+    },
+    "obra-003": {
+      "titulo": "Retirantes",
+      "artista": "Candido Portinari",
+      "tecnica": "Óleo sobre tela",
+      "anoCriacao": 1944,
+      "descricao": "Família de retirantes nordestinos em uma paisagem árida, com figuras magras e olhares marcados pela seca e pela fome.",
+      "valorEstimado": 90000000,
+      "emExposicao": false
+    },
+    "obra-004": {
+      "titulo": "O Lavrador de Café",
+      "artista": "Candido Portinari",
+      "tecnica": "Óleo sobre tela",
+      "anoCriacao": 1934,
+      "descricao": "Trabalhador rural em primeiro plano, com a enxada na mão e o cafezal ao fundo, destacando a força do trabalho no campo.",
+      "valorEstimado": 75000000,
+      "emExposicao": true
+    },
+    "obra-005": {
+      "titulo": "A Noite Estrelada",
+      "artista": "Vincent van Gogh",
+      "tecnica": "Óleo sobre tela",
+      "anoCriacao": 1889,
+      "descricao": "Céu noturno em redemoinhos sobre uma pequena vila, com um cipreste escuro em primeiro plano. Pintada a partir da janela do quarto do artista em Saint-Rémy.",
+      "valorEstimado": 500000000,
+      "emExposicao": true
+    },
+    "obra-006": {
+      "titulo": "O Pensador",
+      "artista": "Auguste Rodin",
+      "tecnica": "Escultura em bronze",
+      "anoCriacao": 1904,
+      "descricao": "Homem sentado, com o queixo apoiado na mão, em profunda reflexão. Concebida originalmente para o portal A Porta do Inferno.",
+      "valorEstimado": 60000000,
+      "emExposicao": false
+    },
+    "obra-007": {
+      "titulo": "Mona Lisa",
+      "artista": "Leonardo da Vinci",
+      "tecnica": "Óleo sobre madeira",
+      "anoCriacao": 1503,
+      "descricao": "Retrato de meio corpo de uma mulher de sorriso enigmático, com uma paisagem sinuosa ao fundo. Famosa pela técnica do sfumato.",
+      "valorEstimado": 4000000000,
+      "emExposicao": true
+    },
+    "obra-008": {
+      "titulo": "O Grito",
+      "artista": "Edvard Munch",
+      "tecnica": "Têmpera e pastel sobre cartão",
+      "anoCriacao": 1893,
+      "descricao": "Figura de expressão angustiada sobre uma ponte, diante de um céu alaranjado em ondas. Símbolo da ansiedade moderna.",
+      "valorEstimado": 600000000,
+      "emExposicao": true
+    },
+    "obra-009": {
+      "titulo": "A Grande Onda de Kanagawa",
+      "artista": "Katsushika Hokusai",
+      "tecnica": "Xilogravura",
+      "anoCriacao": 1831,
+      "descricao": "Uma onda gigante com espuma em forma de garras ameaça barcos de pescadores, com o Monte Fuji pequeno ao fundo.",
+      "valorEstimado": 15000000,
+      "emExposicao": false
+    },
+    "obra-010": {
+      "titulo": "Moça com Brinco de Pérola",
+      "artista": "Johannes Vermeer",
+      "tecnica": "Óleo sobre tela",
+      "anoCriacao": 1665,
+      "descricao": "Jovem com turbante azul e amarelo olha por cima do ombro sobre fundo escuro, com uma grande pérola na orelha.",
+      "valorEstimado": 300000000,
+      "emExposicao": true
+    }
+  }
+}

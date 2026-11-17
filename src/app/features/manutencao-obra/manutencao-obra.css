@@ -1,0 +1,69 @@
+.form-box {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+h2 {
+  margin-top: 8px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.linha-dupla {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0 16px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  padding: 8px;
+  border: 1px solid var(--borda);
+  border-radius: 4px;
+  font: inherit;
+}
+
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+  border-color: var(--perigo);
+}
+
+small {
+  color: var(--perigo);
+}
+
+.character-count {
+  color: var(--texto-suave);
+  font-size: .8rem;
+}
+
+.checkbox-field {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.checkbox-field span {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox-field em {
+  color: var(--texto-suave);
+  font-weight: normal;
+}
+
+.botoes {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}

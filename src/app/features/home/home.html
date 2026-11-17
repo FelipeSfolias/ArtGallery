@@ -1,0 +1,37 @@
+<section class="hero">
+  <span class="etiqueta">Galeria virtual de obras de arte</span>
+  <h1>Arte que atravessa o tempo, em uma só galeria.</h1>
+  <p>A ArtGallery cataloga obras com título, artista, técnica, ano de criação, descrição, valor estimado e
+    disponibilidade para exposição.</p>
+  <div class="acoes">
+    <a class="btn" routerLink="/obras">Visitar a galeria</a>
+    <a class="btn btn-secundario" routerLink="/sobre">Sobre o projeto</a>
+  </div>
+</section>
+
+<section class="indicadores" aria-label="Números do acervo">
+  <div><strong>{{ resumo().total }}</strong> obras no acervo</div>
+  <div><strong>{{ resumo().expostas }}</strong> em exposição</div>
+  <div><strong>{{ resumo().artistas }}</strong> artistas</div>
+</section>
+
+<section>
+  <h2>Obras em destaque</h2>
+  @if (obras() === null) {
+  <p class="mensagem">Carregando obras...</p>
+  } @else {
+  <div class="grade">
+    @for (obra of destaques(); track obra.id) {
+    <a class="card" [routerLink]="['/obras', obra.id]">
+      <app-capa-obra [obra]="obra" />
+      <div class="card-corpo">
+        <h3>{{ obra.titulo }}</h3>
+        <p>{{ obra.artista }}, {{ obra.anoCriacao }}</p>
+      </div>
+    </a>
+    } @empty {
+    <p class="mensagem">Nenhuma obra em exposição. <a routerLink="/admin/form">Cadastre uma obra</a>.</p>
+    }
+  </div>
+  }
+</section>
